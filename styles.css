@@ -86,7 +86,7 @@ address { font-style: normal; }
 .portrait-card { display: grid; grid-template-rows: auto 1fr; height: 100%; border: 1px solid #514939; background: #21201a; text-decoration: none; }
 .portrait-card img { width: 100%; aspect-ratio: 1.12; object-fit: cover; }
 .portrait-frame { overflow: hidden; }
-.portrait-card .portrait-brent { object-position: center 36%; transform: scale(1.27); transform-origin: 41% 40%; }
+.portrait-card .portrait-brent { object-position: center top; transform: scale(1.4); transform-origin: 41% top; }
 .portrait-card .portrait-joann { object-position: center 45%; }
 .portrait-card .portrait-rachael { object-position: center 24%; }
 .portrait-card :is(.portrait-joann, .portrait-rachael) { transform: scaleX(-1); }
