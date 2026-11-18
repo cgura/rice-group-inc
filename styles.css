@@ -24,8 +24,11 @@ a:focus-visible { outline: 3px solid #a36e13; outline-offset: 5px; }
 .site-header, .hero, .site-footer { background: var(--dark); color: var(--paper); }
 .header-inner { min-height: 5rem; display: flex; align-items: center; justify-content: space-between; gap: .75rem 2rem; flex-wrap: wrap; padding-block: 1rem; }
 .site-header { border-bottom: 1px solid #444033; }
-.wordmark { font: 1.45rem/1.2 var(--serif); text-decoration: none; }
-.wordmark span { color: var(--gold); white-space: nowrap; }
+.wordmark { display: inline-flex; max-width: 100%; align-items: flex-end; gap: .5rem; font: 1.15rem/1.2 var(--serif); text-decoration: none; }
+/* Frame the original banner’s wordmark. The lower notch keeps the script R’s tail. */
+.wordmark-logo { position: relative; width: clamp(9.5rem, 30vw, 14rem); aspect-ratio: 1080 / 269; overflow: hidden; mix-blend-mode: screen; clip-path: polygon(0 0, 100% 0, 100% 93%, 56% 93%, 56% 100%, 43% 100%, 43% 93%, 0 93%); }
+.wordmark-logo img { position: absolute; top: -72.12%; left: -41.67%; width: 185.19%; max-width: none; height: auto; }
+.wordmark-compass { color: var(--gold); white-space: nowrap; padding-bottom: .32rem; }
 .header-inner nav { display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; font-size: .9rem; }
 .header-inner nav a { text-decoration: none; }
 .header-inner nav a:hover { text-decoration: underline; }
