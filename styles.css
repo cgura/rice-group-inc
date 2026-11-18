@@ -60,7 +60,8 @@ h3 { font-size: clamp(1.45rem, 3vw, 2rem); }
 .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
 .footer-grid h2 { font-size: 1.55rem; color: var(--gold); }
 .footer-grid ul, .disclosures ul { list-style: none; margin: 0; padding: 0; }
-.footer-grid li { margin-bottom: .4rem; }
+.license-list > li + li { border-top: 1px solid #514939; margin-top: .65rem; padding-top: .65rem; }
+.license-list a { display: inline-block; margin-top: .125rem; }
 address { font-style: normal; }
 .disclosures { margin-top: 2rem; border-top: 1px solid #514939; padding-top: 1.2rem; }
 .disclosures li { padding-block: .25rem; }
