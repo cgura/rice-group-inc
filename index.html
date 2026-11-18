@@ -13,7 +13,11 @@
     "@id": "https://ricegroupinc.com/#rice-group",
     "name": "The Rice Group at Compass",
     "url": "https://ricegroupinc.com/",
-    "image": "https://ricegroupinc.com/images/The_Rice_Group_Team_Portrait.png",
+    "image": [
+      "https://ricegroupinc.com/images/brent-rice-portrait.webp",
+      "https://ricegroupinc.com/images/joann-rice-portrait.webp",
+      "https://ricegroupinc.com/images/rachael-klufa.webp"
+    ],
     "telephone": "+1-214-808-3100",
     "address": {
       "@type": "PostalAddress",
@@ -31,13 +35,6 @@
   </script>
 </head>
 <body>
-  <svg class="photo-filter-definitions" width="0" height="0" aria-hidden="true" focusable="false">
-    <defs>
-      <filter id="rice-team-sharpen" color-interpolation-filters="sRGB">
-        <feConvolveMatrix order="3" kernelMatrix="0 -.16 0 -.16 1.64 -.16 0 -.16 0" edgeMode="duplicate" preserveAlpha="true"/>
-      </filter>
-    </defs>
-  </svg>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
@@ -52,47 +49,55 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap portrait-hero">
+        <div class="hero-intro">
           <p class="eyebrow">North Texas Real Estate</p>
-          <h1>Building relationships, one home at a time.</h1>
+          <h1 id="hero-heading">Building relationships,<br class="hero-break"> one home at a time.</h1>
           <p class="hero-copy">The Rice Group at Compass helps buyers, sellers, and renters across Frisco, Plano, McKinney, and the surrounding North Texas communities.</p>
-          <div class="actions">
-            <a class="button" href="https://www.compass.com/agents/the-rice-group/">View our listings</a>
-            <a class="text-link" href="tel:+12148083100">Call 214-808-3100</a>
-          </div>
         </div>
-        <img class="hero-image" src="images/The_Rice_Group_Team_Portrait.png" width="1254" height="1254" alt="The Rice Group at Compass team portrait">
-      </div>
-    </section>
 
-    <section class="wrap section" id="team">
-      <div class="section-heading">
-        <h2>Meet the team</h2>
-        <p>Local experience in Denton and Collin counties, with practical guidance from the first conversation through closing.</p>
-      </div>
-      <div class="team-grid">
-        <article>
-          <a class="team-card" href="https://www.compass.com/agents/the-rice-group/" aria-labelledby="rice-group-names">
-            <div class="rice-team-photo">
-              <img src="images/rice-group-team.png" width="300" height="300" alt="Brent and JoAnn Rice" loading="lazy">
-            </div>
-            <div class="team-copy">
-              <h3 id="rice-group-names">Brent &amp; JoAnn Rice</h3>
-              <p>Brent is a broker associate with experience in contract negotiation. JoAnn is a senior agent who brings home staging expertise to listings.</p>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a class="team-card" href="https://www.compass.com/agents/rachael-klufa/" aria-labelledby="rachael-klufa-name">
-            <img src="images/rachael-klufa.webp" width="800" height="1200" alt="Portrait of Rachael Klufa" loading="lazy">
-            <div class="team-copy">
-              <h3 id="rachael-klufa-name">Rachael Klufa</h3>
-              <p>Real Estate Agent with The Rice Group at Compass.</p>
-            </div>
-          </a>
-        </article>
+        <div class="hero-team" id="team">
+          <ul class="portrait-grid" aria-label="Meet the team">
+            <li>
+              <a class="portrait-card" href="https://www.compass.com/agents/the-rice-group/" aria-labelledby="joann-name">
+                <img class="portrait-joann" src="images/joann-rice-portrait.webp" alt="Portrait of JoAnn Rice">
+                <div class="portrait-caption">
+                  <h2 id="joann-name">JoAnn Rice</h2>
+                  <p>Senior Agent, REALTOR®</p>
+                  <span class="portrait-arrow" aria-hidden="true">↗</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="portrait-card" href="https://www.compass.com/agents/the-rice-group/" aria-labelledby="brent-name">
+                <div class="portrait-frame">
+                  <img class="portrait-brent" src="images/brent-rice-portrait.webp" alt="Brent Rice beside a football trophy">
+                </div>
+                <div class="portrait-caption">
+                  <h2 id="brent-name">Brent S. Rice</h2>
+                  <p>Broker Associate</p>
+                  <span class="portrait-arrow" aria-hidden="true">↗</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="portrait-card" href="https://www.compass.com/agents/rachael-klufa/" aria-labelledby="rachael-name">
+                <img class="portrait-rachael" src="images/rachael-klufa.webp" alt="Portrait of Rachael Klufa">
+                <div class="portrait-caption">
+                  <h2 id="rachael-name">Rachael Klufa</h2>
+                  <p>Real Estate Agent</p>
+                  <span class="portrait-arrow" aria-hidden="true">↗</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="actions">
+          <a class="button" href="https://www.compass.com/agents/the-rice-group/">View our listings</a>
+          <a class="text-link" href="tel:+12148083100">Call 214-808-3100</a>
+        </div>
       </div>
     </section>
 
@@ -189,3 +194,4 @@
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
