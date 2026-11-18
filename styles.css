@@ -49,6 +49,13 @@ h3 { font-size: clamp(1.45rem, 3vw, 2rem); }
 .team-card:is(:hover, :focus-visible) h3 { text-decoration: underline; }
 .team-card img { width: 100%; height: 100%; min-height: 13rem; object-fit: cover; object-position: center 37%; }
 .team-copy { align-self: center; padding: clamp(1rem, 2.4vw, 2rem); }
+.faq-list { max-width: 50rem; border-top: 1px solid var(--line); }
+.faq-list details { border-bottom: 1px solid var(--line); }
+.faq-list summary { cursor: pointer; padding: 1rem .25rem; font-weight: 650; }
+.faq-list summary:hover { text-decoration: underline; }
+.faq-list summary:focus-visible { outline: 3px solid #a36e13; outline-offset: 3px; }
+.faq-list details > :not(summary) { margin: 0 .25rem 1rem; color: var(--muted); }
+.faq-list ul { padding-inline-start: 1.5rem; }
 .service-band { background: #eee6d6; }
 .services-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 2rem 4rem; }
 .services-grid ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem 1.5rem; }
